@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parameter</title>
+</head>
+
+<body>
+
+    <div id="tekstDiv"></div>
+    <button onclick="changingStraits('red','100%','100px','Filler Text')">Press</button>
+    <button onclick="changingStraits('cyan','65%','500px','More Filler Text')">Press</button>
+
+    <script>
+        function changingStraits(color, width, height, tekst) {
+            document.getElementById('tekstDiv').innerHTML = tekst;
+            document.getElementById('tekstDiv').style.backgroundColor = color;
+            document.getElementById('tekstDiv').style.width = width;
+            document.getElementById('tekstDiv').style.height = height;
+        }
+
+
+
+
+    </script>
+
+</body>
+
+</html>
